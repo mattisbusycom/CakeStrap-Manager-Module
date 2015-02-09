@@ -21,13 +21,15 @@ CakePlugin::load(array(
   `thumbnail` varchar(255) NOT NULL,
   `order` int(11) NOT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=37 ;</pre><pre>CREATE TABLE IF NOT EXISTS `videos` (
+) ENGINE=InnoDB  DEFAULT CHARSET=latin1;</pre>
+
+	<pre>CREATE TABLE IF NOT EXISTS `videos` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
   `nome` varchar(255) NOT NULL,
   `link` varchar(255) NOT NULL,
   `thumbnail` varchar(255) NOT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=18 ;</pre>
+) ENGINE=InnoDB  DEFAULT CHARSET=latin1;</pre>
 
 
 ### Funcionalidades
@@ -43,9 +45,3 @@ CakePlugin::load(array(
 1. Inclusão de vídeos do youtube por link
 2. Sugestões de vídeos ( em desenvolvimento )
 3. Armazenamento das informações do video no banco de dados automaticamente ( Link, Nome, Thumbnail )
-
-
-## Dúvidas / Bugs
-
-Tem alguma dúvida ou achou algum bug? Crie uma issue [aqui][] no GitHub!
-[aqui]: https://github.com/hugodias/cakestrap_gerenciador_module/issues
